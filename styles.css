@@ -1,0 +1,40 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.column {
+  flex-basis: 48%;
+}
+
+.thumbnail-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.thumbnail-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.thumbnail {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.completion-button {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  font-size: 36px;
+  border: none;
+  cursor: pointer;
+}

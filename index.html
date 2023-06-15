@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>写真撮影</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <h1>撮影項目</h1>
+    <div class="container">
+      <div class="column">
+        <div class="thumbnail-container">
+          <p class="thumbnail-title">右後方</p>
+          <label for="landscape">
+            <img
+              id="thumbnail-landscape"
+              class="thumbnail"
+              alt="右後方のサムネイル"
+              src="https://i.pinimg.com/736x/37/cf/7c/37cf7c0e7257f6ef3509c9eeba3a924b.jpg"
+              onclick="document.getElementById('landscape').click()"
+            />
+          </label>
+          <input
+            type="file"
+            id="landscape"
+            name="landscape"
+            accept="image/*"
+            style="display: none"
+            onchange="showThumbnail(this, 'thumbnail-landscape')"
+          />
+        </div>
+
+        <div class="thumbnail-container">
+          <p class="thumbnail-title">車台番号</p>
+          <label for="food">
+            <img
+              id="thumbnail-food"
+              class="thumbnail"
+              alt="左前方のサムネイル"
+              src="https://i.pinimg.com/736x/37/cf/7c/37cf7c0e7257f6ef3509c9eeba3a924b.jpg"
+              onclick="document.getElementById('food').click()"
+            />
+          </label>
+          <input
+            type="file"
+            id="food"
+            name="food"
+            accept="image/*"
+            style="display: none"
+            onchange="showThumbnail(this, 'thumbnail-food')"
+          />
+        </div>
+      </div>
+      <div class="column">
+        <div class="thumbnail-container">
+          <p class="thumbnail-title">左前方</p>
+          <label for="person">
+            <img
+              id="thumbnail-person"
+              class="thumbnail"
+              alt="車台番号のサムネイル"
+              src="https://i.pinimg.com/736x/37/cf/7c/37cf7c0e7257f6ef3509c9eeba3a924b.jpg"
+              onclick="document.getElementById('person').click()"
+            />
+          </label>
+          <input
+            type="file"
+            id="person"
+            name="person"
+            accept="image/*"
+            style="display: none"
+            onchange="showThumbnail(this, 'thumbnail-person')"
+          />
+        </div>
+
+        <div class="thumbnail-container">
+          <p class="thumbnail-title">荷台</p>
+          <label for="animation">
+            <img
+              id="thumbnail-animation"
+              class="thumbnail"
+              alt="アニメーションのサムネイル"
+              src="https://i.pinimg.com/736x/37/cf/7c/37cf7c0e7257f6ef3509c9eeba3a924b.jpg"
+              onclick="document.getElementById('animation').click()"
+            />
+          </label>
+          <input
+            type="file"
+            id="animation"
+            name="animation"
+            accept="image/*"
+            style="display: none"
+            onchange="showThumbnail(this, 'thumbnail-animation')"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="button-container">
+      <button class="completion-button">完了</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
