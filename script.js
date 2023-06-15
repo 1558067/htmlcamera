@@ -16,7 +16,13 @@ function showThumbnail(input, id) {
     };
   };
   if (input.files && input.files[0]) {
-    reader.readAsDataURL(input.files[0]);
+    if (input.files[0].type.indexOf("image") === 0) {
+      reader.readAsDataURL(input.files[0]);
+    } else {
+      alert(
+        "選択したファイルは画像ではありません。画像ファイルを選択してください。"
+      );
+    }
   } else {
     document.getElementById(id).src =
       "https://i.pinimg.com/736x/37/cf/7c/37cf7c0e7257f6ef3509c9eeba3a924b.jpg";
